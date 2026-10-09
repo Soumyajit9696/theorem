@@ -17,7 +17,7 @@ const EMPTY_HINT = 'Nothing typeset yet — write LaTeX,<br>open the template li
 const S = {
   tex: '\\int_{-\\infty}^{\\infty} e^{-x^{2}}\\,dx = \\sqrt{\\pi}',
   display: 'display', variant: 'regular',
-  size: 26, ink: '#1A1917', hl: '#C2440C',
+  size: 28, ink: '#1A1917', hl: '#C2440C',
   bgMode: 'transparent', bgColor: '#FFFFFF', pad: 24, radius: 0,
   fmt: 'png', scale: 2, fname: 'equation', backdrop: 'paper'
 };
@@ -327,7 +327,7 @@ function doRelayout(){
   const tw = dims.w + 2 * S.pad, th = dims.h + 2 * S.pad;
   let f = 1;
   if (fitMode === 'fit'){
-    const vw = viewport.clientWidth - 104, vh = viewport.clientHeight - 138;
+    const vw = viewport.clientWidth - 116, vh = viewport.clientHeight - 154;
     if (vw > 0 && vh > 0) f = Math.min(1, vw / tw, vh / th);
   }
   frameWrap.style.transform = f < 0.999 ? 'scale(' + f + ')' : '';
@@ -359,7 +359,7 @@ function pushHistory(raw){
   if (hist.length && hist[0].tex === raw){ renderHistory(raw); return; }
   let svg = '';
   if (dims.h > 0){
-    const b = buildSVG({ scale: 40 / Math.max(8, dims.h), pad: 0, withBg: false, radius: 0 });
+    const b = buildSVG({ scale: 42 / Math.max(8, dims.h), pad: 0, withBg: false, radius: 0 });
     if (b) svg = serialize(b.el);
   }
   hist.unshift({ tex: raw, svg: svg });
@@ -659,11 +659,11 @@ async function texPreviewSVG(tex, targetH){
       const node = await MathJax.tex2svgPromise(preprocess(tex), { display: true });
       const svg = (node && node.tagName && node.tagName.toLowerCase() === 'svg') ? node : node.querySelector('svg');
       if (svg){
-        const r = measureNode(svg, 20);
+        const r = measureNode(svg, 22);
         const tall = /\\begin\{\s*([a-zA-Z]*matrix|cases|align|gather|split|array)/.test(tex);
-        let H = tall ? 46 : (targetH || 26);
+        let H = tall ? 50 : (targetH || 28);
         let W = Math.max(4, r.width * (H / Math.max(1, r.height)));
-        const maxW = 330;
+        const maxW = 360;
         if (W > maxW){ H = H * maxW / W; W = maxW; }
         const out = standaloneSVG(svg, W, H, { ink: pvInk() });
         markup = serialize(out.el);
@@ -1367,7 +1367,7 @@ function readFile(f){
 /* ---------------- UI bindings ---------------- */
 function autoGrow(){
   texEl.style.height = 'auto';
-  texEl.style.height = Math.min(340, Math.max(116, texEl.scrollHeight)) + 'px';
+  texEl.style.height = Math.min(380, Math.max(128, texEl.scrollHeight)) + 'px';
   charCount.textContent = texEl.value.length ? texEl.value.length + ' ch' : '';
 }
 function paintRange(inp){
