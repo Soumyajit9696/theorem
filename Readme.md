@@ -57,7 +57,8 @@ slides, papers, notes, documentation — or anywhere you need a math equation as
 | `Tab` | accept autocomplete |
 | `Esc` | close panels |
 
-<img width="1909" height="927" alt="image" src="https://github.com/user-attachments/assets/49f297dc-6f4b-4f25-8f24-98e3add79702" />
+<img width="1763" height="860" alt="image" src="https://github.com/user-attachments/assets/0c6ad2cf-12a1-49d7-98c6-4a4dfc3ca936" />
+
 
 
 ## FAQ
