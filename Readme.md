@@ -1,8 +1,4 @@
-Got it — the problem was that the README itself contained triple-backtick code blocks, which broke the outer wrapper and made it render. Below is the **full README.md as one single copyable code block** — no nested fences inside, and the internal code snippets are now indented (GitHub still renders them as code blocks, so nothing changes visually on your repo page).
 
-Click the copy button on the block below and paste it into a file named `README.md`:
-
-```markdown
 # Theorem — LaTeX to PNG Converter & Equation Image Generator
 
 ![Theorem](assets/og.png)
@@ -123,7 +119,7 @@ No build step — just open `index.html`, or serve the folder:
 ## License
 
 MIT — see [LICENSE](LICENSE).
-```
+
 
 Two small notes:
 
