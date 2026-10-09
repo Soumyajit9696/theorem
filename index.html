@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ═══════════════ SEO ═══════════════ -->
+<title>Theorem — LaTeX to PNG, SVG & PDF Equation Converter</title>
+<meta name="description" content="Free LaTeX to PNG converter — render LaTeX equations live and export transparent PNG, SVG, JPG or vector PDF. Colors, templates, environments, autocomplete. No signup, runs in your browser.">
+<meta name="keywords" content="latex to png, latextopng, latex png, latex to image, latex equation to png, latex equation image, latex equation renderer, latex converter online, render latex online, latex renderer, latex equation editor, latex to svg, latex to pdf, math equation to png, equation image generator, equation screenshot, math formula to image">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Soumyajit Das">
+<meta name="theme-color" content="#F4F0E5">
+<meta name="theme-color" content="#221E18" media="(prefers-color-scheme: dark)">
+<!-- Google Search Console: uncomment and paste your token after verifying -->
+<!-- <meta name="google-site-verification" content="PASTE-YOUR-TOKEN-HERE"> -->
+
+<!-- Canonical -->
+<link rel="canonical" href="https://soumyajit9696.github.io/theorem/">
+
+<!-- Open Graph (link previews on social/WhatsApp/Slack) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Theorem">
+<meta property="og:title" content="Theorem — LaTeX to PNG Converter">
+<meta property="og:description" content="Render LaTeX equations live and export them as transparent PNG, SVG, JPG or true-vector PDF. Free, private, no signup.">
+<meta property="og:url" content="https://soumyajit9696.github.io/theorem/">
+<meta property="og:image" content="https://soumyajit9696.github.io/theorem/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Theorem — a LaTeX equation rendered live on a transparency checkerboard, ready to export as PNG">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Theorem — LaTeX to PNG Converter">
+<meta name="twitter:description" content="Render LaTeX equations live and export transparent PNG, SVG, JPG or vector PDF. Free and private.">
+<meta name="twitter:image" content="https://soumyajit9696.github.io/theorem/assets/og.png">
+
+<!-- Structured data: the application -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Theorem — LaTeX to PNG",
+  "alternateName": "Theorem Equation Press",
+  "url": "https://soumyajit9696.github.io/theorem/",
+  "description": "Free online LaTeX to PNG converter. Type LaTeX, render equations live, and export transparent PNG, SVG, JPG or true-vector PDF images.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": {
+    "@type": "Person",
+    "name": "Soumyajit Das",
+    "url": "https://github.com/Soumyajit9696"
+  },
+  "keywords": "latex to png, latex png, latex to image, latex equation renderer, latex converter, render latex online, latex to svg, latex to pdf",
+  "featureList": [
+    "Live LaTeX typesetting via MathJax 3 (SVG output)",
+    "Export equations as PNG, JPG, SVG and true-vector PDF",
+    "Transparent background support with alpha channel",
+    "LaTeX environments: equation, align, cases, split, gather, matrices, arrays",
+    "Inline LaTeX autocomplete",
+    "40+ formula templates and a ~160-command reference",
+    "Selection coloring independent of the equation ink",
+    "Share links that embed the equation in the URL"
+  ],
+  "screenshot": "https://soumyajit9696.github.io/theorem/assets/og.png"
+}
+</script>
+
+<!-- Structured data: FAQ (mirrors the README FAQ) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I convert LaTeX to PNG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open Theorem, type or paste your LaTeX, and press Export PNG. Set the resolution from 1× to 6×, pick the ink color, and choose a transparent or colored background before exporting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export LaTeX equations with a transparent background?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Choose the Transparent background mode — the exported PNG keeps its alpha channel, so equations drop cleanly onto slides, documents and dark backgrounds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Theorem free, and does it upload my equations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Theorem is completely free and runs entirely in your browser. Nothing you type is uploaded anywhere; settings are stored only in your own browser's localStorage."
+      }
+    }
+  ]
+}
+</script>
+<!-- ═════════════ /SEO ═══════════════ -->
+
+<link rel="icon" href="data:image/svg+xml; charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2440C'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-style='italic' text-anchor='middle' fill='%23F6F2E7'%3E%C6%92%3C/text%3E%3C/svg%3E">
+
+<!-- KEEP INLINE: restores the saved theme before first paint (prevents a flash) -->
+<script>
+try{ if (localStorage.getItem('theorem.theme') === 'dark') document.documentElement.classList.add('dark'); }catch(e){}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- KEEP INLINE: MathJax config must be defined before the library loads -->
+<script>
+window.MathJax = {
+  svg: { fontCache: 'none' },
+  startup: { typeset: false }
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" onerror="window.__mjFailed=true"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="grain"></div>
+
+<!-- SEO / screen-reader summary (visually hidden) -->
+<h1 class="sr-only">Theorem — LaTeX to PNG converter &amp; LaTeX equation image generator</h1>
+<div class="sr-only">
+  <p>Theorem is a free online tool that converts <strong>LaTeX to PNG</strong>, SVG, JPG and vector-PDF images.
+  Type or paste LaTeX, watch it render live, then export equations with transparent backgrounds, custom ink
+  colors, padding and corner radius. Supports LaTeX environments (equation, align, cases, matrices, arrays),
+  inline autocomplete, 40+ formula templates and a full command reference — all client-side, no signup.</p>
+</div>
+
+<div id="app">
+
+  <header>
+    <div class="brand">
+      <span class="mark">Theorem</span><span class="markDot">.</span>
+      <span class="brandTag">Equation Press</span>
+    </div>
+    <div class="hBtns">
+      <button class="hBtn" id="tplBtn" type="button" title="template library">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.4" y="4.6" width="9.2" height="9" rx="2"/><path d="M5.8 2.4h5.8a2 2 0 0 1 2 2v5.8"/></svg>
+        <span class="lbl">Templates</span>
+      </button>
+      <button class="hBtn" id="refBtn" type="button" title="LaTeX quick reference">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 3.4c2-.9 4-.9 5.2.5 1.2-1.4 3.2-1.4 5.2-.5v8.8c-2-.9-4-.9-5.2.5-1.2-1.4-3.2-1.4-5.2-.5z"/><path d="M8 4v8.9"/></svg>
+        <span class="lbl">Reference</span>
+      </button>
+      <button class="hBtn" id="aboutBtn" type="button" title="about this app">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="8" cy="8" r="6.2"/><path d="M8 7.2v4"/><path d="M8 4.7h.01"/></svg>
+        <span class="lbl">About</span>
+      </button>
+      <button class="hBtn hIcon" id="themeBtn" type="button" title="toggle dark / light theme" aria-label="toggle theme">
+        <svg id="icoMoon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.6 9.8A5.6 5.6 0 0 1 6.2 2.4 5.6 5.6 0 1 0 13.6 9.8z"/></svg>
+        <svg id="icoSun" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" hidden><circle cx="8" cy="8" r="3.1"/><path d="M8 1.2v1.7M8 13.1v1.7M1.2 8h1.7M13.1 8h1.7M3.3 3.3l1.2 1.2M11.5 11.5l1.2 1.2M12.7 3.3l-1.2 1.2M4.5 11.5l-1.2 1.2"/></svg>
+      </button>
+      <a class="hBtn hIcon" href="https://github.com/Soumyajit9696/theorem" target="_blank" rel="noopener" title="Built by Soumyajit Das — view this project on GitHub" aria-label="GitHub">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+    </div>
+    <div class="status busy" id="statusBox" aria-live="polite">
+      <span class="stDot" id="stDot"></span><span id="stTxt">loading MathJax…</span>
+    </div>
+  </header>
+
+  <main>
+    <aside id="panel">
+
+      <!-- 01 · SOURCE -->
+      <section class="sec">
+        <div class="secHead">
+          <span class="micro"><em>01</em>Source</span>
+          <div class="secTools">
+            <span id="charCount"></span>
+            <button class="miniBtn" id="openBtn" type="button" title="open a .tex file">open</button>
+            <button class="miniBtn" id="clearBtn" type="button">clear</button>
+          </div>
+        </div>
+        <input type="file" id="texFile" accept=".tex,.txt,text/plain" hidden>
+
+        <div class="edBar" id="edBar">
+          <button class="edBtn" type="button" data-a="bold" title="wrap selection in \boldsymbol{…}"><span class="ebB">B</span></button>
+          <button class="edBtn" type="button" data-a="text" title="wrap selection in \text{…}"><span class="ebT">T</span></button>
+          <button class="edBtn" type="button" data-a="sup" title="superscript — wraps selection"><span class="ebSm">x<sup>n</sup></span></button>
+          <button class="edBtn" type="button" data-a="sub" title="subscript — wraps selection"><span class="ebSm">x<sub>i</sub></span></button>
+          <button class="edBtn" type="button" data-a="frac" title="fraction — wraps selection if present"><span class="mfrac"><span>a</span><i></i><span>b</span></span></button>
+          <button class="edBtn" type="button" data-a="sqrt" title="square root"><span class="msqrt">√<span class="mr">a</span></span></button>
+          <div class="popWrap">
+            <button class="edBtn" type="button" data-a="hl" title="color the selection — its own palette, independent of ink">
+              <span class="cdot"></span>
+            </button>
+            <div class="pop" id="hlPop" hidden>
+              <div class="popTitle">Selection color</div>
+              <div class="swRow" id="hlSw">
+                <button class="sw" type="button" data-c="#C2440C" style="--c:#C2440C" aria-label="vermilion"></button>
+                <button class="sw" type="button" data-c="#1F6E43" style="--c:#1F6E43" aria-label="forest"></button>
+                <button class="sw" type="button" data-c="#0E7490" style="--c:#0E7490" aria-label="teal"></button>
+                <button class="sw" type="button" data-c="#1E3A5F" style="--c:#1E3A5F" aria-label="navy"></button>
+                <button class="sw" type="button" data-c="#A21CAF" style="--c:#A21CAF" aria-label="plum"></button>
+                <button class="sw" type="button" data-c="#A16207" style="--c:#A16207" aria-label="goldenrod"></button>
+                <button class="sw" type="button" data-c="#1A1917" style="--c:#1A1917" aria-label="black"></button>
+                <button class="sw" type="button" data-c="#FFFFFF" style="--c:#FFFFFF" aria-label="white"></button>
+                <label class="sw swCustom" title="custom color">
+                  <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4v8M4 8h8"/></svg>
+                  <input type="color" id="hlCustom" value="#C2440C" aria-label="custom selection color">
+                </label>
+              </div>
+              <div class="popNote">independent of ink — wraps the selection in \color{…}{…}</div>
+            </div>
+          </div>
+          <button class="edBtn" type="button" data-a="abs" title="absolute value"><span class="mpair">|x|</span></button>
+          <button class="edBtn" type="button" data-a="paren" title="auto-sized parentheses"><span class="mpair">(x)</span></button>
+        </div>
+
+        <div class="taWrap">
+          <textarea id="tex" spellcheck="false" autocomplete="off" autocapitalize="off" wrap="soft"
+            aria-label="LaTeX source" placeholder="e.g.  \int_0^\infty e^{-x^2}\,dx  — or drop a .tex file here"></textarea>
+          <div id="acBox" hidden></div>
+        </div>
+        <div class="errBox" id="errBox" aria-live="polite"></div>
+      </section>
+
+      <!-- 02 · INSERT -->
+      <section class="sec">
+        <div class="secHead">
+          <span class="micro"><em>02</em>Insert</span>
+          <div class="seg segSm" id="insSeg">
+            <button class="segBtn on" type="button" data-v="sym">Symbols</button>
+            <button class="segBtn" type="button" data-v="env">Environments</button>
+          </div>
+        </div>
+
+        <div id="symView">
+          <div class="ptabs" id="ptabs"></div>
+          <div class="pgrid" id="pgrid"></div>
+          <div id="palHint">hover a symbol to preview · click to insert</div>
+        </div>
+
+        <div id="envView" hidden>
+          <div class="envList" id="envList"></div>
+          <div class="subHead"><span class="micro">Matrices</span></div>
+          <div class="pgrid" id="envMat"></div>
+          <div id="envHint">click any environment to insert a skeleton at the cursor — placeholders are yours to edit</div>
+        </div>
+      </section>
+
+      <!-- 03 · TYPESETTING -->
+      <section class="sec">
+        <div class="secHead"><span class="micro"><em>03</em>Typesetting</span></div>
+        <div class="row">
+          <span class="rowLbl">Mode</span>
+          <div class="seg" id="modeSeg">
+            <button class="segBtn" type="button" data-v="display" title="display style — full-size operators, centered layout">Display</button>
+            <button class="segBtn" type="button" data-v="inline" title="inline style — compact, like $…$ inside text">Inline</button>
+          </div>
+        </div>
+        <div class="row">
+          <span class="rowLbl">Variant</span>
+          <div class="seg" id="varSeg">
+            <button class="segBtn" type="button" data-v="regular">Regular</button>
+            <button class="segBtn" type="button" data-v="bold" title="wraps the source in \boldsymbol{…} (single formulas)">Bold</button>
+            <button class="segBtn" type="button" data-v="roman" title="wraps the source in \mathrm{…} (single formulas)">Roman</button>
+          </div>
+        </div>
+        <div class="row">
+          <span class="rowLbl">Size</span>
+          <div class="ctl"><input type="range" id="sizeR" min="12" max="72" step="1" aria-label="font size"><span class="val" id="sizeV"></span></div>
+        </div>
+        <div class="row rowTop">
+          <span class="rowLbl">Ink</span>
+          <div class="swRow" id="inkSw">
+            <button class="sw" type="button" data-c="#1A1917" style="--c:#1A1917" aria-label="black ink"></button>
+            <button class="sw" type="button" data-c="#FFFFFF" style="--c:#FFFFFF" aria-label="white ink"></button>
+            <button class="sw" type="button" data-c="#6E6659" style="--c:#6E6659" aria-label="warm gray ink"></button>
+            <button class="sw" type="button" data-c="#C2440C" style="--c:#C2440C" aria-label="vermilion ink"></button>
+            <button class="sw" type="button" data-c="#1F6E43" style="--c:#1F6E43" aria-label="forest ink"></button>
+            <button class="sw" type="button" data-c="#0E7490" style="--c:#0E7490" aria-label="teal ink"></button>
+            <button class="sw" type="button" data-c="#1E3A5F" style="--c:#1E3A5F" aria-label="navy ink"></button>
+            <button class="sw" type="button" data-c="#A21CAF" style="--c:#A21CAF" aria-label="plum ink"></button>
+            <button class="sw" type="button" data-c="#A16207" style="--c:#A16207" aria-label="goldenrod ink"></button>
+            <label class="sw swCustom" title="custom ink color">
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4v8M4 8h8"/></svg>
+              <input type="color" id="inkCustom" value="#1A1917" aria-label="custom ink color">
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 · FRAME -->
+      <section class="sec">
+        <div class="secHead"><span class="micro"><em>04</em>Frame</span></div>
+        <div class="row">
+          <span class="rowLbl">Presets</span>
+          <div class="ex">
+            <button class="exChip" type="button" data-p="bare" title="transparent, tight padding">Bare</button>
+            <button class="exChip" type="button" data-p="card" title="white rounded card">Card</button>
+            <button class="exChip" type="button" data-p="print" title="white, flat">Print</button>
+            <button class="exChip" type="button" data-p="dark" title="ink background, white ink">Dark</button>
+          </div>
+        </div>
+        <div class="row">
+          <span class="rowLbl">Background</span>
+          <div class="seg" id="bgSeg">
+            <button class="segBtn" type="button" data-v="transparent">Transparent</button>
+            <button class="segBtn" type="button" data-v="color">Color</button>
+          </div>
+        </div>
+        <div class="row rowTop hide" id="bgSwRow">
+          <span class="rowLbl">Fill</span>
+          <div class="swRow" id="bgSw">
+            <button class="sw" type="button" data-c="#FFFFFF" style="--c:#FFFFFF" aria-label="white background"></button>
+            <button class="sw" type="button" data-c="#F6F3EC" style="--c:#F6F3EC" aria-label="paper background"></button>
+            <button class="sw" type="button" data-c="#E9E4D8" style="--c:#E9E4D8" aria-label="soft gray background"></button>
+            <button class="sw" type="button" data-c="#1A1917" style="--c:#1A1917" aria-label="ink background"></button>
+            <button class="sw" type="button" data-c="#C2440C" style="--c:#C2440C" aria-label="vermilion background"></button>
+            <button class="sw" type="button" data-c="#1F6E43" style="--c:#1F6E43" aria-label="forest background"></button>
+            <button class="sw" type="button" data-c="#1E3A5F" style="--c:#1E3A5F" aria-label="navy background"></button>
+            <label class="sw swCustom" title="custom background color">
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4v8M4 8h8"/></svg>
+              <input type="color" id="bgCustom" value="#FFFFFF" aria-label="custom background color">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <span class="rowLbl">Padding</span>
+          <div class="ctl"><input type="range" id="padR" min="0" max="96" step="1" aria-label="padding"><span class="val" id="padV"></span></div>
+        </div>
+        <div class="row" id="radRow">
+          <span class="rowLbl">Corners</span>
+          <div class="ctl"><input type="range" id="radR" min="0" max="64" step="1" aria-label="corner radius"><span class="val" id="radV"></span></div>
+        </div>
+      </section>
+
+      <!-- 05 · OUTPUT -->
+      <section class="sec">
+        <div class="secHead"><span class="micro"><em>05</em>Output</span></div>
+        <div class="row">
+          <span class="rowLbl">Format</span>
+          <div class="seg" id="fmtSeg">
+            <button class="segBtn" type="button" data-v="png">PNG</button>
+            <button class="segBtn" type="button" data-v="svg">SVG</button>
+            <button class="segBtn" type="button" data-v="jpg">JPG</button>
+            <button class="segBtn" type="button" data-v="pdf">PDF</button>
+          </div>
+        </div>
+        <div class="row">
+          <span class="rowLbl">Scale</span>
+          <div class="ctl"><input type="range" id="scaleR" min="1" max="6" step="0.5" aria-label="export scale"><span class="val" id="scaleV"></span></div>
+        </div>
+        <div class="row">
+          <span class="rowLbl">Filename</span>
+          <input class="txt" id="fname" type="text" spellcheck="false" autocomplete="off" aria-label="filename" value="equation">
+        </div>
+        <button class="btnPrimary" id="exportBtn" type="button" disabled>
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v7.2M8 9.7 5.2 6.9M8 9.7l2.8-2.8M2.8 13h10.4"/></svg>
+          <span id="exportLbl">Export PNG</span>
+        </button>
+        <div class="toolbar">
+          <button class="tb" id="copyPng" type="button" title="copy raster image to clipboard">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5.8" y="5.8" width="7.2" height="7.2" rx="1.6"/><path d="M10.2 3.2H4.4a1.2 1.2 0 0 0-1.2 1.2v5.8"/></svg>PNG
+          </button>
+          <button class="tb" id="copySvg" type="button" title="copy vector markup to clipboard">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5.8" y="5.8" width="7.2" height="7.2" rx="1.6"/><path d="M10.2 3.2H4.4a1.2 1.2 0 0 0-1.2 1.2v5.8"/></svg>SVG
+          </button>
+          <button class="tb" id="copyTex" type="button" title="copy LaTeX source to clipboard">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5.8" y="5.8" width="7.2" height="7.2" rx="1.6"/><path d="M10.2 3.2H4.4a1.2 1.2 0 0 0-1.2 1.2v5.8"/></svg>TeX
+          </button>
+          <button class="tb" id="saveTex" type="button" title="download the source as a .tex file">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v7.2M8 9.7 5.2 6.9M8 9.7l2.8-2.8M2.8 13h10.4"/></svg>.tex
+          </button>
+          <button class="tb" id="copyUri" type="button" title="copy the PNG as a base64 data URI — paste straight into HTML/CSS">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.9 9.1 9.1 6.9M5.6 12.4 3.6 10.4a2.7 2.7 0 0 1 0-3.8l1.2-1.2M10.4 3.6l2 2a2.7 2.7 0 0 1 0 3.8l-1.2 1.2"/></svg>URI
+          </button>
+          <button class="tb" id="copyLink" type="button" title="copy a shareable link — the equation travels inside the URL">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.7 9.3 9.3 6.7M5.4 12.6l-2-2a2.7 2.7 0 0 1 0-3.8l1.3-1.3M10.6 3.4l2 2a2.7 2.7 0 0 1 0 3.8l-1.3 1.3"/></svg>URL
+          </button>
+        </div>
+        <p class="fmtNote" id="fmtNote"></p>
+      </section>
+
+      <div class="panelFoot"><span id="footHint"></span></div>
+    </aside>
+
+    <section id="stageCol">
+      <div id="stageBar">
+        <span class="micro">Preview</span>
+        <div class="seg segSm" id="backSeg" title="stage backdrop — check contrast against light and dark slides">
+          <button class="segBtn" type="button" data-v="paper">Paper</button>
+          <button class="segBtn" type="button" data-v="light">Light</button>
+          <button class="segBtn" type="button" data-v="ink">Ink</button>
+        </div>
+      </div>
+      <div id="vpWrap">
+        <div id="viewport" class="bg-paper">
+          <div id="frameWrap" style="display:none">
+            <div id="frame" class="trans"><div id="stageMath"></div></div>
+          </div>
+          <div id="empty">
+            <div class="glyph">ƒ</div>
+            <div class="hint" id="emptyHint">Warming up the typesetter —<br>the first render lands in a moment.</div>
+          </div>
+        </div>
+        <div id="hud">
+          <button class="hudChip" id="fitChip" type="button" hidden title="toggle between fitted and actual size">fit 100%</button>
+          <span class="hudChip" id="dimsChip">— × —</span>
+        </div>
+      </div>
+      <div id="histBar">
+        <span class="micro">Recent</span>
+        <div id="hist"><span class="hEmpty">renders you keep will collect here</span></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- template drawer -->
+<div class="drawer" id="drawer" aria-label="template library">
+  <div class="drawerHead">
+    <span class="micro"><em>Lib</em>Templates</span>
+    <button class="iconBtn" id="drawerClose" type="button" title="close">
+      <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+    </button>
+  </div>
+  <div class="search">
+    <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.4"/><path d="M10.4 10.4 14 14"/></svg>
+    <input id="tplSearch" type="text" placeholder="search 40+ templates…" autocomplete="off" spellcheck="false">
+  </div>
+  <div class="tplCats" id="tplCats"></div>
+  <div class="tplList" id="tplList"></div>
+</div>
+
+<!-- reference modal -->
+<div class="modal" id="modal" hidden>
+  <div class="modalCard">
+    <div class="modalHead">
+      <span class="micro"><em>Ref</em>LaTeX</span>
+      <div class="search">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.4"/><path d="M10.4 10.4 14 14"/></svg>
+        <input id="refSearch" type="text" placeholder="search commands, symbols, environments…" autocomplete="off" spellcheck="false">
+      </div>
+      <button class="iconBtn" id="modalClose" type="button" title="close">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+      </button>
+    </div>
+    <div class="refBody" id="refBody"></div>
+  </div>
+</div>
+
+<!-- about modal -->
+<div class="modal" id="aboutModal" hidden>
+  <div class="modalCard aboutCard">
+    <div class="aboutHead">
+      <span class="aboutMark">Theorem<span class="dot">.</span></span>
+      <span class="aboutTag">equation press</span>
+      <button class="iconBtn" id="aboutClose" type="button" title="close">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+      </button>
+    </div>
+    <div class="aboutBody">
+      <p class="aboutLede">Type LaTeX, watch it typeset live, and press it out as a crisp image — a transparent PNG, a true-vector SVG or PDF — ready for slides, papers and notes.</p>
+      <p class="builtBy">Built by <strong>Soumyajit Das</strong> · <a href="https://github.com/Soumyajit9696/theorem" target="_blank" rel="noopener">github.com/Soumyajit9696/theorem</a></p>
+
+      <h3 class="aboutH">What's inside</h3>
+      <ul>
+        <li>Live typesetting via MathJax 3 (SVG output) — nothing leaves your browser.</li>
+        <li>Inline LaTeX autocomplete: type \ and a few letters, Tab completes — environment skeletons included.</li>
+        <li>Full environment support: equation, align, gather, cases, split, matrices, arrays — pasted fragments with delimiters, labels, comments and even \documentclass are understood.</li>
+        <li>40+ ready-made templates and a searchable reference of ~160 commands, all with live previews.</li>
+        <li>Ink, size, background, padding &amp; corner controls — plus a separate selection color for highlighting parts of an equation.</li>
+        <li>Exports: PNG / JPG at 1–6×, standalone SVG, vector PDF (jsPDF + svg2pdf, loaded only when needed).</li>
+        <li>Clipboard: copy the rendered PNG, the SVG markup, the LaTeX source, a base64 data URI — or a share link that carries the equation in the URL.</li>
+        <li>Open and save .tex files — drag one straight onto the editor.</li>
+        <li>Light &amp; dark themes, persistent render history, and settings remembered locally.</li>
+      </ul>
+
+      <h3 class="aboutH">Shortcuts</h3>
+      <div class="kbdRow">
+        <span id="kbdExport"></span>
+        <span id="kbdCopy"></span>
+        <span id="kbdDup"></span>
+        <span id="kbdCmt"></span>
+        <span><kbd>Esc</kbd> close panels</span>
+      </div>
+
+      <h3 class="aboutH">Notes</h3>
+      <p>Everything runs locally; only MathJax, the fonts and — on PDF export — jsPDF load from a CDN. Your input and settings stay in this browser's localStorage. JPEG has no alpha channel, so transparent backgrounds are filled white. PDFs are true vector when svg2pdf is available, otherwise rasterized at export scale.</p>
+      <p class="aboutCredit">Built by Soumyajit Das · set in Fraunces &amp; IBM Plex · typeset by MathJax · pressed with jsPDF / svg2pdf</p>
+    </div>
+  </div>
+</div>
+
+<div id="toasts"></div>
+<div id="sink"></div>
+<div id="measurer"></div>
+
+<noscript>
+  <p style="max-width:560px;margin:24px auto;padding:16px 20px;border:1px solid #D8D0B8;border-radius:10px;background:#FCFBF6;color:#4A443A;font:14px/1.6 sans-serif;text-align:center">
+    <strong>Theorem — LaTeX to PNG converter</strong> needs JavaScript (MathJax) to render LaTeX equations.
+    Please enable JavaScript and reload this page.
+  </p>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>

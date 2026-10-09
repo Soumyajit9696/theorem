@@ -1,0 +1,8 @@
+# Theorem — LaTeX to PNG converter
+# https://github.com/Soumyajit9696/theorem
+
+User-agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://soumyajit9696.github.io/theorem/sitemap.xml
