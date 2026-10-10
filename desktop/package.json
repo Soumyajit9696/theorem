@@ -3,7 +3,10 @@
   "productName": "Theorem",
   "version": "1.0.0",
   "description": "Theorem — LaTeX to PNG/SVG/JPG/PDF converter & equation image generator (desktop edition)",
-  "author": "Soumyajit Das",
+  "author": {
+  "name": "Soumyajit Das",
+  "email": "Soumyajit9696@users.noreply.github.com"
+},
   "license": "MIT",
   "repository": {
     "type": "git",
