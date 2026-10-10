@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "description": "Theorem — LaTeX to PNG/SVG/JPG/PDF converter & equation image generator (desktop edition)",
   "author": {
-  "name": "Soumyajit Das",
-  "email": "Soumyajit9696@users.noreply.github.com"
-},
+    "name": "Soumyajit Das",
+    "email": "Soumyit9696@users.noreply.github.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Soumyajit9696/theorem.git"
+    "url": "https://github.com/Soumyit9696/theorem.git"
   },
   "main": "main.js",
   "scripts": {
@@ -20,10 +20,12 @@
     "dist:mac": "electron-builder --mac",
     "dist:linux": "electron-builder --linux"
   },
+  "dependencies": {
+    "electron-updater": "^6.3.0"
+  },
   "devDependencies": {
     "electron": "^33.0.0",
-    "electron-builder": "^25.1.8",
-    "electron-updater": "^6.3.0"
+    "electron-builder": "^25.1.8"
   },
   "build": {
     "appId": "com.soumyajitdas.theorem",
@@ -40,9 +42,19 @@
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "artifactName": "Theorem-Setup-${version}.${ext}"
+      "artifactName": "Theorem-Setup.${ext}"
     },
-    "mac":   { "target": ["dmg"], "category": "public.app-category.education", "icon": "build/icon.png" },
-    "linux": { "target": ["AppImage", "deb"], "category": "Education", "icon": "build/icon.png" }
+    "mac": {
+      "target": ["dmg"],
+      "category": "public.app-category.education",
+      "icon": "build/icon.png",
+      "artifactName": "Theorem.${ext}"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Education",
+      "icon": "build/icon.png",
+      "artifactName": "Theorem.${ext}"
+    }
   }
 }
