@@ -31,6 +31,15 @@
     "appId": "com.soumyajitdas.theorem",
     "productName": "Theorem",
     "files": ["main.js", "preload.js", "renderer/**/*"],
+    "publish": [
+    {
+      "provider": "github",
+      "owner": "Soumyajit9696",
+      "repo": "theorem",
+      "releaseType": "release"
+    }
+  ],
+  "files": ["main.js", "preload.js", "renderer/**/*"],
     "directories": { "output": "release" },
     "fileAssociations": [
       { "ext": "tex", "name": "LaTeX Document", "description": "LaTeX source file", "role": "Editor" }
