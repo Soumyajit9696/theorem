@@ -1,6 +1,10 @@
 
 # Theorem — LaTeX to PNG Converter & Equation Image Generator
 
+<img width="512" height="512" alt="icon_transparent" src="https://github.com/user-attachments/assets/10d0a27a-03dc-49f0-8038-6303b1f3fcb4" />
+
+-----------------
+
 ![Theorem](app/assets/og.png)
 
 [![Homepage](https://img.shields.io/badge/homepage-theorem-C2440C?style=flat-square)](https://soumyajit9696.github.io/theorem/)
