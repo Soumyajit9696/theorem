@@ -5,6 +5,10 @@
   "description": "Theorem — LaTeX to PNG/SVG/JPG/PDF converter & equation image generator (desktop edition)",
   "author": "Soumyajit Das",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Soumyajit9696/theorem.git"
+  },
   "main": "main.js",
   "scripts": {
     "start": "electron .",
