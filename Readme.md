@@ -1,7 +1,7 @@
 
 # Theorem — LaTeX to PNG Converter & Equation Image Generator
 
-<img width="512" height="256" alt="icon_transparent" src="https://github.com/user-attachments/assets/10d0a27a-03dc-49f0-8038-6303b1f3fcb4" />
+<img width="256" height="256" alt="icon_transparent" src="https://github.com/user-attachments/assets/10d0a27a-03dc-49f0-8038-6303b1f3fcb4" />
 
 -----------------
 
