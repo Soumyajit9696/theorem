@@ -1,0 +1,41 @@
+{
+  "name": "theorem",
+  "productName": "Theorem",
+  "version": "1.0.0",
+  "description": "Theorem — LaTeX to PNG/SVG/JPG/PDF converter & equation image generator (desktop edition)",
+  "author": "Soumyajit Das",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-updater": "^6.3.0"
+  },
+  "build": {
+    "appId": "com.soumyajitdas.theorem",
+    "productName": "Theorem",
+    "files": ["main.js", "preload.js", "renderer/**/*"],
+    "directories": { "output": "release" },
+    "fileAssociations": [
+      { "ext": "tex", "name": "LaTeX Document", "description": "LaTeX source file", "role": "Editor" }
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "Theorem-Setup-${version}.${ext}"
+    },
+    "mac":   { "target": ["dmg"], "category": "public.app-category.education", "icon": "build/icon.png" },
+    "linux": { "target": ["AppImage", "deb"], "category": "Education", "icon": "build/icon.png" }
+  }
+}
