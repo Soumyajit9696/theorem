@@ -1,155 +1,315 @@
+# Theorem — LaTeX to PNG Converter
 
-# Theorem — LaTeX to PNG Converter & Equation Image Generator
+<div align="center">
 
-<img width="256" height="256" alt="icon_transparent" src="https://github.com/user-attachments/assets/10d0a27a-03dc-49f0-8038-6303b1f3fcb4" />
+<img src="https://github.com/user-attachments/assets/10d0a27a-03dc-49f0-8038-6303b1f3fcb4" width="150" alt="Theorem app icon" />
 
------------------
+# 𝕿𝖍𝖊𝖔𝖗𝖊𝖒
 
-![Theorem](app/assets/og.png)
+### Turn mathematical expressions into beautiful images.
 
-[![Homepage](https://img.shields.io/badge/homepage-theorem-C2440C?style=flat-square)](https://soumyajit9696.github.io/theorem/)
-[![Live app](https://img.shields.io/badge/live-app-1F6E43?style=flat-square)](https://soumyajit9696.github.io/theorem/app/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-0E7490?style=flat-square)](LICENSE)
-[![100% client-side](https://img.shields.io/badge/100%25-client--side-A21CAF?style=flat-square)](https://soumyajit.github.io/)
-[![Built by Soumyajit Das](https://img.shields.io/badge/built%20by-Soumyajit%20Das-C2440C?style=flat-square)](https://github.com/Soumyajit9696)
+A fast, free, privacy-first LaTeX equation editor and image generator.
 
-> **Convert LaTeX to PNG** — render equations live and export transparent PNG, WebP, SVG, JPG or
-> true-vector PDF images. Free, private, no signup. Built by [Soumyajit Das](https://github.com/Soumyajit9696).
+**Write LaTeX. Preview instantly. Export beautifully.**
 
-**[ Homepage ](https://soumyajit9696.github.io/theorem/)** · **[ Try the live app → ](https://soumyajit9696.github.io/theorem/app/)** · **[ Desktop installers ](https://github.com/Soumyajit9696/theorem/releases/latest)**
+[**Homepage**](https://soumyajit9696.github.io/theorem/) · [**Open Web App →**](https://soumyajit9696.github.io/theorem/app/) · [**Download Desktop App**](https://github.com/Soumyajit9696/theorem/releases/latest)
 
-Theorem is a **LaTeX to PNG / LaTeX to image** converter that runs entirely in your browser.
-Type or paste LaTeX, watch it typeset in milliseconds, then press it out as a crisp image for
-slides, papers, notes, documentation — or anywhere you need a math equation as an image.
+<br>
 
-## Why Theorem for LaTeX → PNG?
+[![License: MIT](https://img.shields.io/badge/License-MIT-0E7490?style=flat-square)](LICENSE)
+[![Client-side](https://img.shields.io/badge/Processing-100%25%20Client--Side-A21CAF?style=flat-square)](https://soumyajit9696.github.io/theorem/app/)
+[![Web App](https://img.shields.io/badge/Platform-Web-1F6E43?style=flat-square)](https://soumyajit9696.github.io/theorem/app/)
+[![Desktop](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-C2440C?style=flat-square)](https://github.com/Soumyajit9696/theorem/releases/latest)
 
-- **Transparent backgrounds** — exported PNGs keep their alpha channel, so equations drop
-  cleanly onto slides, Notion, docs, and dark backgrounds.
-- **True vector exports** — standalone SVG and vector PDF (via jsPDF + svg2pdf), crisp at any zoom.
-- **Every format** — PNG, WebP, JPG, SVG, PDF at 1–6× resolution, with a live pixel-dimension
-  readout before you commit.
-- **Smart PNGs** — every exported PNG carries its LaTeX source *inside the file*. Drop it back
-  into Theorem on any machine and the editable formula pops back out.
-- **Paste & drag anywhere** — copy as a paste-ready image straight into Word, Docs, and Outlook;
-  on the desktop app, drag the equation out of the window into PowerPoint or a folder as a file.
-- **Full LaTeX environment support** — `equation`, `align`, `gather`, `cases`, `split`,
-  the matrix family, and `array` with rules. Pasted fragments with `$$…$$`, `\[…\]`,
-  `\label`, `%` comments, even `\documentclass` wrappers just work.
-- **Complete customization** — ink color, font size, background, padding, rounded corners,
-  frame presets, and per-selection coloring with its own palette.
-- **Fast and private** — rendering is MathJax 3 in your browser. Nothing is uploaded anywhere.
-- **Zero setup** — no build step, no backend, no account.
+</div>
 
-## Everything inside
+---
 
-| Feature | Details |
+## Overview
+
+**Theorem** is a LaTeX-to-image converter that transforms mathematical expressions into high-quality graphics. Write or paste your LaTeX, preview the rendered equation in real time, customize its appearance, and export it in the format you need.
+
+Whether you're preparing lecture notes, research papers, presentations, scientific posters, documentation, or educational content, Theorem makes mathematical typesetting simple.
+
+- **Live rendering** powered by MathJax 3.
+- **Multiple export formats** for documents, presentations, and the web.
+- **Transparent backgrounds** for seamless integration into your workflow.
+- **Vector graphics** for sharp output at any scale.
+- **Privacy-first processing** without uploading your equations to a server.
+- **Web and desktop editions** for flexible access.
+
+## Features
+
+### Export & graphics
+
+| Feature | Description |
 |---|---|
-| ⌨️ **Live typesetting** | MathJax 3 SVG output with a millisecond render timer |
-| 🧠 **Inline autocomplete** | Type `\` + letters, `Tab` completes — environment skeletons included |
-| 📚 **40+ templates** | Calculus, linear algebra, probability, physics, chemistry, environments |
-| 📖 **Quick reference** | ~160 commands with rendered examples, searchable, click-to-insert |
-| 🧰 **Symbol palette** | Greek, operators, relations, arrows, structures, styles |
-| 🎨 **Selection color** | Highlight parts of an equation, independent of the main ink |
-| 📋 **Clipboard** | Paste-ready image, SVG markup, LaTeX source, base64 data URI, share links |
-| 📂 **.tex files** | Open, save, and drag-and-drop `.tex` directly onto the editor |
-| 🌓 **Dark & light themes** | Persisted, no flash on load |
-| 🕘 **Render history** | Recent equations remembered across sessions |
-| 🖥️ **Desktop edition** | Windows / macOS / Linux — native menus, status bar, drag-out, auto-updates |
+| PNG | High-quality equation images with transparency support |
+| WebP | Compact images with transparency support |
+| JPG | Images with customizable solid backgrounds |
+| SVG | Standalone vector graphics |
+| PDF | Vector PDF export when the required libraries support it |
+| Resolution control | Export at 1×–6× scale |
+| Dimension preview | Inspect output dimensions before exporting |
+| Clipboard | Copy images, SVG markup, LaTeX source, and data URIs |
+| Shareable equations | Generate links containing your equation |
+
+### LaTeX editing
+
+| Feature | Description |
+|---|---|
+| Live preview | See mathematical expressions update as you type |
+| Autocomplete | Complete commands and environment skeletons with `Tab` |
+| Equation environments | Support for `equation`, `align`, `gather`, `cases`, `split`, matrices, and arrays |
+| Smart input | Handle pasted fragments, display-math delimiters, comments, labels, and supported document wrappers |
+| `.tex` support | Open, save, and drag-and-drop LaTeX source files |
+| Render history | Return to recent equations |
+| Templates | Explore 40+ examples covering mathematics, physics, chemistry, and more |
+| Quick reference | Search approximately 160 commands with rendered examples |
+| Symbol palette | Insert Greek letters, operators, relations, arrows, and other symbols |
+
+### Appearance & customization
+
+- Customize equation color, font size, background, and padding.
+- Choose transparent or solid backgrounds.
+- Adjust rounded corners and frame presets.
+- Apply independent colors to selected parts of an equation.
+- Switch between dark and light themes.
+- Retain supported settings between sessions.
+
+### Desktop edition
+
+The Electron-based desktop edition extends the web experience with native desktop integration.
+
+- Windows, macOS, and Linux packaging.
+- Native application menus and status bar.
+- Drag rendered equations into supported applications or folders.
+- Local MathJax and export-library assets for offline operation.
+- Automatic updates when the release and updater configuration support them.
+
+## Getting started
+
+### Use Theorem online
+
+No installation required.
+
+1. Open the [Theorem Web App](https://soumyajit9696.github.io/theorem/app/).
+2. Type or paste your LaTeX expression.
+3. Customize the appearance and output settings.
+4. Choose your desired export format.
+5. Export or copy your equation.
+
+For example, enter:
+
+```latex
+\[
+E = mc^2
+\]
+```
+
+Or try a more advanced expression:
+
+```latex
+\begin{align}
+\nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\
+\nabla \times \mathbf{B} &=
+\mu_0 \mathbf{J} +
+\mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{align}
+```
+
+### Run the web app locally
+
+The web edition uses static HTML, CSS, and JavaScript.
+
+```bash
+git clone https://github.com/Soumyajit9696/theorem.git
+cd theorem
+```
+
+You can open `app/index.html` directly or serve the repository locally:
+
+```bash
+npx serve .
+```
+
+Then open the local URL printed by the server.
+
+### Run the desktop app
+
+Install [Node.js](https://nodejs.org/) first.
+
+```bash
+cd desktop
+npm install
+npm start
+```
+
+This launches the desktop app in development mode.
+
+## Build desktop installers
+
+The desktop application uses Electron. The exact build commands depend on the scripts defined in `desktop/package.json`.
+
+Typical commands are:
+
+```bash
+npm run dist:win
+npm run dist:mac
+npm run dist:linux
+```
+
+| Operating system | Output |
+|---|---|
+| Windows | `.exe` installer |
+| macOS | `.dmg` installer |
+| Linux | `.AppImage` and/or `.deb` |
+
+Build each platform on its supported operating system or use a configured CI workflow. See [the latest desktop releases](https://github.com/Soumyajit9696/theorem/releases/latest) for available installers.
 
 ## Keyboard shortcuts
 
 | Shortcut | Action |
 |---|---|
-| `Ctrl/⌘ + S` | export in the current format |
-| `Ctrl/⌘ + ⇧ + C` | copy PNG (paste-ready) |
-| `Ctrl/⌘ + D` | duplicate line |
-| `Ctrl/⌘ + /` | comment / uncomment line |
-| `Tab` | accept autocomplete |
-| `Esc` | close panels |
+| `Ctrl/⌘ + S` | Export in the current format |
+| `Ctrl/⌘ + Shift + C` | Copy PNG to the clipboard |
+| `Ctrl/⌘ + D` | Duplicate the current line |
+| `Ctrl/⌘ + /` | Comment or uncomment a line |
+| `Tab` | Accept autocomplete |
+| `Esc` | Close panels |
 
-## FAQ
+*Shortcut availability may vary by platform and application context.*
 
-### How do I convert LaTeX to PNG?
+## Frequently asked questions
 
-Open the [live app](https://soumyajit9696.github.io/theorem/app/), type or paste your LaTeX, and press
-**Export PNG**. Set the resolution from 1× to 6×, pick the ink color, and choose a transparent or
-colored background before exporting.
+<details>
+<summary><strong>How do I convert LaTeX to PNG?</strong></summary>
 
-### Can I export LaTeX equations with a transparent background?
+Open the [web app](https://soumyajit9696.github.io/theorem/app/), enter your expression, and select PNG export. Choose your preferred resolution, colors, and background before exporting.
 
-Yes — choose the **Transparent** background mode and the PNG keeps its alpha channel. JPEG has no
-alpha, so transparent backgrounds are filled white in `.jpg` exports. WebP keeps transparency too.
+</details>
 
-### Is Theorem free, and does it upload my equations?
+<details>
+<summary><strong>Can I export equations with transparent backgrounds?</strong></summary>
 
-Theorem is completely free (MIT license) and runs entirely in your browser. Nothing you type is
-uploaded anywhere; settings live only in your own browser's localStorage.
+Yes. Select the transparent background option for PNG or WebP. JPEG does not support transparency, so transparent areas must be filled with a solid color.
 
-### Which formats can I export?
+</details>
 
-PNG, WebP, JPG, SVG (standalone vector), and PDF (true vector when svg2pdf is available, otherwise
-rasterized at your chosen scale). You can also copy a base64 data URI for embedding in HTML/CSS,
-or a share link that carries the equation in the URL.
+<details>
+<summary><strong>Is Theorem free?</strong></summary>
 
-## Run it locally
+Yes. Theorem is released under the MIT License. See the [LICENSE](LICENSE) file for the applicable terms.
 
-Web app — no build step, just open `app/index.html`, or serve the folder:
+</details>
 
-    git clone https://github.com/Soumyajit9696/theorem.git
-    cd theorem
-    npx serve .
+<details>
+<summary><strong>Are my equations uploaded to a server?</strong></summary>
 
-Desktop app:
+The web edition processes equations in your browser and does not require an equation-processing backend. Browser-local settings may be stored in local storage. Desktop-specific features may have their own network requirements, such as update checks.
 
-    cd desktop
-    npm install
-    npm start            # dev mode
-    npm run dist:win     # build installers (also :mac, :linux)
+</details>
 
-### Deploy on GitHub Pages
+<details>
+<summary><strong>Can I use Theorem offline?</strong></summary>
 
-1. Push this repository to GitHub.
-2. **Settings → Pages → Source: Deploy from a branch → `main` / `(root)`**.
-3. Homepage at `https://soumyajit9696.github.io/theorem/`, app at `/theorem/app/`.
+The desktop edition is designed to bundle its rendering and export dependencies locally. Offline availability depends on the packaged assets and the feature being used. The hosted web edition requires an initial connection to load the application.
 
-### Desktop releases
+</details>
 
-Push a tag (`v1.0.0`) or create a release on GitHub — the Actions workflow builds
-`Theorem-Setup.exe`, `Theorem.dmg`, and `Theorem.AppImage` automatically and attaches them
-to the release. Installed apps self-update from new releases.
+<details>
+<summary><strong>Which export formats are available?</strong></summary>
+
+PNG, WebP, JPG, SVG, and PDF are supported. PDF output can be vector-based when the SVG-to-PDF libraries are available; fallback behavior depends on the implementation.
+
+</details>
 
 ## Project structure
 
-    theorem/
-    ├── index.html                  landing page (homepage)
-    ├── sw.js                       one-time cache cleanup worker
-    ├── app/                        web app (GitHub Pages)
-    │   ├── index.html
-    │   ├── style.css
-    │   ├── script.js
-    │   └── assets/
-    ├── desktop/                    Electron desktop edition
-    │   ├── main.js · preload.js · package.json
-    │   ├── build/icon.png
-    │   └── renderer/
-    │       ├── index.html · style.css · script.js
-    │       ├── desktop-app.js      Windows skin, custom menus, native glue
-    │       └── vendor/             MathJax, jsPDF, svg2pdf (offline)
-    ├── .github/workflows/desktop-release.yml
-    ├── robots.txt · sitemap.xml
-    └── LICENSE
+```text
+theorem/
+├── index.html
+├── sw.js
+├── app/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── assets/
+├── desktop/
+│   ├── main.js
+│   ├── preload.js
+│   ├── package.json
+│   ├── build/
+│   │   └── icon.png
+│   └── renderer/
+│       ├── index.html
+│       ├── style.css
+│       ├── script.js
+│       ├── desktop-app.js
+│       └── vendor/
+├── .github/
+│   └── workflows/
+├── robots.txt
+├── sitemap.xml
+└── LICENSE
+```
 
-## Tech & credits
+*The tree is illustrative; adjust it to match the files in the repository.*
 
-- [MathJax 3](https://www.mathjax.org/) — TeX → SVG typesetting
-- [jsPDF](https://github.com/parallax/jsPDF) + [svg2pdf.js](https://github.com/yWorks/svg2pdf.js) — PDF export
-- [Fraunces](https://fonts.google.com/specimen/Fraunces) & [IBM Plex](https://fonts.google.com/specimen/IBM+Plex+Sans) — typography
+## Technology stack
+
+| Technology | Purpose |
+|---|---|
+| HTML, CSS, JavaScript | User interface and application logic |
+| MathJax 3 | LaTeX parsing and mathematical SVG rendering |
+| Electron | Desktop application |
+| jsPDF | PDF generation |
+| svg2pdf.js | SVG-to-PDF conversion |
+| GitHub Pages | Static web hosting |
+| GitHub Actions | Automated builds and releases |
+
+### Acknowledgements
+
+- [MathJax](https://www.mathjax.org/) — mathematical typesetting.
+- [jsPDF](https://github.com/parallax/jsPDF) — PDF generation.
+- [svg2pdf.js](https://github.com/yWorks/svg2pdf.js) — SVG-to-PDF conversion.
+- [Fraunces](https://fonts.google.com/specimen/Fraunces) and [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) — typography.
+
+## Deployment
+
+The web edition is hosted on GitHub Pages.
+
+- **Homepage:** https://soumyajit9696.github.io/theorem/
+- **Web app:** https://soumyajit9696.github.io/theorem/app/
+
+To deploy updates, push your changes to the configured GitHub Pages branch. Confirm the repository's Pages settings and workflow match your deployment setup.
+
+Desktop release automation is managed separately through GitHub Actions. Consult the repository's workflow configuration for the exact release triggers and artifact names.
 
 ## Author
 
-**Soumyajit Das** — [GitHub](https://github.com/Soumyajit9696) · [Theorem repo](https://github.com/Soumyajit9696/theorem)
+<div align="center">
+
+**Soumyajit Das**
+
+MSc Physics · Computational Materials Science · Software Development
+
+[GitHub](https://github.com/Soumyajit9696) · [Portfolio](https://soumyajit9696.github.io/) · [Theorem](https://soumyajit9696.github.io/theorem/)
+
+</div>
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+Theorem is licensed under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**Theorem**
+
+*Write equations. Create possibilities.*
+
+Made with care by [Soumyajit Das](https://github.com/Soumyajit9696).
+
+</div>
