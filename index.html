@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -11,358 +10,511 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Theorem — LaTeX to PNG Converter | Render & Export Equations Online</title>
-<meta name="description" content="Convert LaTeX to PNG, SVG, WebP or PDF for free. Theorem renders equations live with transparent backgrounds, full environment support, an offline web app and a native desktop edition. Built by Soumyajit Das.">
-<meta name="keywords" content="latex to png, latex png, latex to image, latex equation renderer, latex converter online, render latex, latex equation editor, latex to svg, latex to pdf, math equation image">
-<meta name="robots" content="index, follow, max-image-preview:large">
+
+<title>Theorem: Free LaTeX to PNG, SVG &amp; PDF Converter</title>
+<meta name="description" content="Convert LaTeX equations to transparent PNG, SVG, PDF or WebP with a live preview. Free, private, runs in your browser, plus an offline desktop app.">
 <meta name="author" content="Soumyajit Das">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#F4F0E5">
 <link rel="canonical" href="https://soumyajit9696.github.io/theorem/">
-<link rel="icon" href="data:image/svg+xml; charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C2440C'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' font-style='italic' text-anchor='middle' fill='%23F6F2E7'%3E%C6%92%3C/text%3E%3C/svg%3E">
 
+<!-- Favicons: real files, not data: URIs (Google's favicon crawler cannot read data: URIs) -->
+<link rel="icon" href="https://soumyajit9696.github.io/theorem/favicon.ico" sizes="any">
+<link rel="icon" href="https://soumyajit9696.github.io/theorem/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://soumyajit9696.github.io/theorem/favicon-48x48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="https://soumyajit9696.github.io/theorem/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Theorem">
-<meta property="og:title" content="Theorem — LaTeX to PNG, SVG & PDF Equation Converter">
-<meta property="og:description" content="Type LaTeX, watch it render live, export transparent PNG, vector SVG or PDF. Free, private, offline-capable.">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Theorem: Free LaTeX to PNG, SVG &amp; PDF Converter">
+<meta property="og:description" content="Type LaTeX, watch it render live, export a transparent PNG, vector SVG or PDF. Free, private, offline-capable.">
 <meta property="og:url" content="https://soumyajit9696.github.io/theorem/">
-<meta property="og:image" content="https://soumyajit9696.github.io/theorem/app/assets/og.png">
+<meta property="og:image" content="https://soumyajit9696.github.io/theorem/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Theorem LaTeX to PNG converter with a rendered equation and PNG, SVG, WebP, PDF export formats">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Theorem — LaTeX to PNG Converter">
+<meta name="twitter:title" content="Theorem: Free LaTeX to PNG, SVG &amp; PDF Converter">
 <meta name="twitter:description" content="Render LaTeX live, export transparent PNG, SVG or PDF. Free and private.">
-<meta name="twitter:image" content="https://soumyajit9696.github.io/theorem/app/assets/og.png">
+<meta name="twitter:image" content="https://soumyajit9696.github.io/theorem/og.png">
 
+<!-- Structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Theorem — LaTeX to PNG",
-  "url": "https://soumyajit9696.github.io/theorem/",
-  "applicationCategory": "EducationalApplication",
-  "operatingSystem": "Any",
-  "isAccessibleForFree": true,
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "author": { "@type": "Person", "name": "Soumyajit Das", "url": "https://github.com/Soumyajit9696" },
-  "featureList": [
-    "Live LaTeX typesetting", "Export to PNG, WebP, JPG, SVG and vector PDF",
-    "Transparent backgrounds", "LaTeX environments", "Inline autocomplete",
-    "Desktop app for Windows, macOS and Linux"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://soumyajit9696.github.io/theorem/#website",
+      "url": "https://soumyajit9696.github.io/theorem/",
+      "name": "Theorem",
+      "alternateName": "Theorem LaTeX to PNG",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://soumyajit9696.github.io/theorem/#app",
+      "name": "Theorem",
+      "alternateName": "Theorem LaTeX to PNG Converter",
+      "description": "Free LaTeX equation renderer that exports transparent PNG, WebP, JPG, vector SVG and PDF. Runs in the browser, with an offline desktop app for Windows, macOS and Linux.",
+      "url": "https://soumyajit9696.github.io/theorem/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Windows, macOS, Linux, Web",
+      "isAccessibleForFree": true,
+      "license": "https://github.com/Soumyajit9696/theorem/blob/main/LICENSE",
+      "downloadUrl": "https://github.com/Soumyajit9696/theorem/releases/latest",
+      "image": "https://soumyajit9696.github.io/theorem/og.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Person", "name": "Soumyajit Das", "url": "https://github.com/Soumyajit9696" },
+      "featureList": [
+        "Live LaTeX typesetting",
+        "Export to PNG, WebP, JPG, SVG and vector PDF",
+        "Transparent backgrounds",
+        "LaTeX environments: align, cases, matrices, gather",
+        "Inline autocomplete and formula templates",
+        "Offline desktop app for Windows, macOS and Linux"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I convert LaTeX to PNG?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Type or paste your LaTeX into Theorem, check the live preview, choose PNG and export. The background stays transparent unless you pick a colour." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Theorem free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The web app and the desktop app are free and open source under the MIT license, with no account and no watermark." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Theorem upload my equations?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Rendering happens entirely in your browser or in the desktop app, so what you type never leaves your device." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export a LaTeX equation with a transparent background?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. PNG, WebP and SVG exports keep a transparent background. JPG cannot store transparency, so it uses the background colour you choose." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Theorem work offline?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The desktop app works fully offline. The web app also keeps working offline after your first visit." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which LaTeX does Theorem support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Theorem typesets math with MathJax, including equation, align, cases, split, gather, matrices and arrays. It renders equations, not whole documents with a documentclass." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I edit an exported equation later?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every PNG exported from Theorem carries its LaTeX source inside the file. Drop the PNG back into Theorem on any machine and the editable formula returns." }
+        }
+      ]
+    }
   ]
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 
 <script>window.MathJax = { svg: { fontCache: 'none' }, startup: { typeset: false } };</script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
 
 <style>
 :root{
-  --paper:#F4F0E5; --panel:#FCFBF6; --panel2:#F0EBDD;
+  --paper:#F4F0E5; --panel:#FCFBF6; --wash:#F0EBDD;
   --ink:#211E19; --ink2:#4A443A; --mut:#8B8171;
-  --line:#E4DECC; --line2:#D8D0B8; --verm:#C2440C;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --sans:'IBM Plex Sans',-apple-system,sans-serif;
-  --disp:'Fraunces',Georgia,serif;
+  --line:#E4DECC; --blue:#C2440C; --blue-d:#9E3508; --marker:#FFE45C;
+  --head:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Newsreader',Georgia,serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font:400 16px/1.6 var(--sans);-webkit-font-smoothing:subpixel-antialiased}
-a{color:var(--verm);text-decoration:none}
-.wrap{max-width:1020px;margin:0 auto;padding:0 26px}
-::selection{background:rgba(194,68,12,.22)}
-#grain{position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.045;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  background-size:160px}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+::selection{background:var(--marker)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;border-radius:6px;z-index:20;font:600 15px var(--head)}
+.skip:focus{left:8px}
 
-/* nav */
-header{border-bottom:1px solid var(--line);background:var(--paper)}
-nav{display:flex;align-items:center;gap:22px;height:64px}
-.mark{font:600 22px var(--disp);color:var(--ink)}
-.mark b{color:var(--verm);font-weight:600}
-nav .sp{margin-left:auto}
-nav a{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
-nav a:hover{color:var(--verm)}
-nav .gh svg{width:16px;height:16px;display:block}
-nav .gh{display:flex;align-items:center;padding:4px}
-nav .gh:hover svg{fill:var(--verm)}
-nav .gh svg{fill:var(--ink2);transition:fill .12s}
+/* header */
+header.top{position:sticky;top:0;z-index:10;background:rgba(244,240,229,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font:700 22px var(--head);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand img{width:30px;height:30px;border-radius:7px}
+.nav{display:flex;gap:26px;margin-left:auto;align-items:center}
+.nav a{font:500 15px var(--head);color:var(--ink2);text-decoration:none}
+.nav a:hover{color:var(--blue)}
+.nav .gh{display:flex;padding:4px}
+.nav .gh svg{width:19px;height:19px;fill:currentColor}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:10px;font:600 15px var(--head);text-decoration:none;cursor:pointer;border:1.5px solid var(--ink);transition:background .15s,color .15s,border-color .15s;line-height:1.2}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.primary:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.sm{padding:8px 14px;font-size:14px;border-radius:8px}
+.btn svg{width:16px;height:16px}
 
 /* hero */
-.hero{padding:84px 0 30px;text-align:center}
-.eyebrow{font:600 11px var(--mono);letter-spacing:.28em;text-transform:uppercase;color:var(--verm)}
-h1{font:600 clamp(54px,9vw,86px)/1.02 var(--disp);margin:14px 0 6px;letter-spacing:-.01em}
-h1 b{color:var(--verm);font-weight:600}
-.tag{font:500 clamp(17px,2.6vw,22px) var(--disp);font-style:italic;color:var(--ink2);margin:0 0 14px}
-.sub{max-width:620px;margin:0 auto;color:var(--ink2);font-size:16.5px}
-.ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:34px 0 10px}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border-radius:10px;
-  font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;
-  border:1px solid var(--ink);transition:background .15s,border-color .15s}
-.btn.primary{background:var(--ink);color:#F6F2E7}
-.btn.primary:hover{background:var(--verm);border-color:var(--verm)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{border-color:var(--verm);color:var(--verm)}
-.btn svg{width:15px;height:15px}
-.microline{font:400 11px var(--mono);color:var(--mut)}
+.hero{position:relative;padding:72px 0 88px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:40px 40px;opacity:.7;
+  -webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+h1{font:700 clamp(40px,5.6vw,66px)/1.02 var(--head);letter-spacing:-.025em;margin:0 0 22px}
+.lede{font-size:20px;color:var(--ink2);max-width:34em;margin:0 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.fine{margin:18px 0 0;font-size:15px;color:var(--mut)}
 
-/* the live stage */
-.stageWrap{margin:52px auto 0;max-width:640px}
-.stage{position:relative;background:repeating-conic-gradient(#FFFFFF 0 25%,#E6DECB 0 50%);
-  background-size:22px 22px;border-radius:var(--r,10px);padding:40px 26px;min-height:132px;
-  display:flex;align-items:center;justify-content:center;
-  outline:1.5px dashed rgba(194,68,12,.5);outline-offset:9px;
-  box-shadow:0 18px 40px rgba(58,48,26,.12);animation:rise .6s cubic-bezier(.2,.8,.25,1)}
-#liveEq{color:#1A1917;font-family:Georgia,serif;transition:opacity .22s}
-#liveEq svg{display:block;max-width:100%;height:auto}
-.hud{margin-top:18px;font:400 10.5px var(--mono);color:var(--mut)}
-.hud b{color:var(--verm);font-weight:600}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}}
-.hero>*{animation:rise .55s cubic-bezier(.2,.8,.25,1) backwards}
-.hero .eyebrow{animation-delay:.05s}.hero h1{animation-delay:.1s}.hero .tag{animation-delay:.15s}
-.hero .sub{animation-delay:.2s}.hero .ctas{animation-delay:.25s}.stageWrap{animation:rise .55s .32s cubic-bezier(.2,.8,.25,1) backwards}
+/* live workbench */
+.bench{background:var(--panel);border:1.5px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0 var(--blue);overflow:hidden}
+.bench-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 14px;border-bottom:1.5px solid var(--ink);background:var(--wash)}
+.bench-bar span{font:600 13px var(--head);color:var(--ink2);margin-right:4px}
+.chip{font:500 13px var(--head);padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--blue);color:var(--blue)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bench label{position:absolute;left:-999px}
+#tex{display:block;width:100%;border:0;border-bottom:1.5px solid var(--ink);padding:16px 18px;font:400 15px/1.6 var(--mono);color:var(--ink);background:var(--panel);resize:vertical;min-height:92px}
+#tex:focus{outline:none;background:#FFFEFA;box-shadow:inset 0 0 0 3px rgba(194,68,12,.25)}
+.stage{background:repeating-conic-gradient(#fff 0 25%,#E6DECB 0 50%) 0 0/20px 20px;min-height:170px;padding:28px 18px;display:flex;align-items:center;justify-content:center;overflow-x:auto}
+#out{color:#1A1917;transition:opacity .15s}
+#out svg{display:block;max-width:100%;height:auto}
+#out code{font:400 16px var(--mono)}
+.bench-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 14px;border-top:1.5px solid var(--ink)}
+.bench-foot .note{font-size:14px;color:var(--mut);margin-right:auto}
+.bench-foot .err{color:#B3261E}
 
 /* sections */
-section{padding:78px 0}
-.shead{margin-bottom:34px}
-.shead .micro{font:600 10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--verm)}
-.shead .micro em{font-style:normal;color:var(--mut);margin-right:7px}
-.shead h2{font:600 clamp(26px,4vw,34px) var(--disp);margin:8px 0 0}
+section{padding:88px 0}
+section.alt{background:var(--panel);border-block:1px solid var(--line)}
+h2{font:650 clamp(28px,3.8vw,42px)/1.08 var(--head);letter-spacing:-.02em;margin:0 0 16px}
+h3{font:600 19px/1.25 var(--head);margin:0 0 6px;letter-spacing:-.005em}
+.sec-lede{color:var(--ink2);max-width:36em;margin:0}
 
-/* features ledger */
-.frow{display:grid;grid-template-columns:64px 250px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}
-.frow:last-of-type{border-bottom:1px solid var(--line)}
-.fnum{font:600 11px var(--mono);color:var(--verm);letter-spacing:.12em;padding-top:5px}
-.frow h3{margin:0;font:600 17px var(--sans)}
-.frow p{margin:0;color:var(--ink2);font-size:15px}
+/* formats table */
+.tablewrap{overflow-x:auto;margin-top:36px;border:1.5px solid var(--ink);border-radius:12px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:17px}
+th,td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 14px var(--head);color:var(--ink2);background:var(--wash);border-bottom:1.5px solid var(--ink)}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font:600 17px var(--head);white-space:nowrap}
+
+/* features */
+.feat{display:grid;grid-template-columns:minmax(260px,.8fr) 1.4fr;gap:64px}
+.feat .sticky{position:sticky;top:104px;align-self:start}
+.feat dl{margin:0}
+.feat .row{padding:24px 0;border-top:1px solid var(--line)}
+.feat .row:last-child{border-bottom:1px solid var(--line)}
+.feat dt{font:600 19px var(--head);margin:0 0 6px}
+.feat dd{margin:0;color:var(--ink2)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px}
 
 /* steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.step .n{font:600 60px/1 var(--disp);color:#D5CDB8}
-.step .n b{color:var(--verm);font-weight:600;font-size:24px;vertical-align:top}
-.step h3{font:600 16px var(--sans);margin:12px 0 6px}
-.step p{margin:0;color:var(--ink2);font-size:14.5px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--paper)}
+.step{padding:30px 28px;border-right:1.5px solid var(--ink)}
+.step:last-child{border-right:0}
+.step .n{font:700 15px var(--mono);color:var(--blue);margin-bottom:14px;display:block}
+.step p{margin:0;color:var(--ink2);font-size:17px}
 
-/* platforms */
-.plats{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
-.panel{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:30px 32px}
-.panel h3{font:600 20px var(--disp);margin:0}
-.panel .pm{font:400 11px var(--mono);color:var(--mut);margin:4px 0 16px}
-.panel ul{list-style:none;padding:0;margin:0 0 22px}
-.panel li{padding:7px 0 7px 18px;position:relative;color:var(--ink2);font-size:14.5px}
-.panel li::before{content:'—';position:absolute;left:0;color:var(--verm)}
-.panel .btn{padding:11px 20px;font-size:12px}
+/* faq */
+.faq{max-width:780px}
+details{border-top:1px solid var(--line);padding:0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font:600 19px/1.3 var(--head);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:500 26px var(--head);color:var(--blue);transition:transform .2s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{margin:0 0 22px;color:var(--ink2);max-width:40em}
 
-/* about */
-.about{text-align:center;max-width:640px;margin:0 auto}
-.about .sig{font:600 30px var(--disp)}
-.about .sig b{color:var(--verm)}
-.about p{color:var(--ink2);font-size:15.5px}
-.links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:22px}
-.links a{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
-.links a:hover{color:var(--verm)}
+/* footer */
+footer{padding:56px 0 48px;border-top:1px solid var(--line)}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+footer p{margin:10px 0 0;color:var(--ink2);font-size:16px;max-width:30em}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px;align-content:flex-start}
+footer li a{font:500 15px var(--head);color:var(--ink2);text-decoration:none}
+footer li a:hover{color:var(--blue)}
+.colophon{grid-column:1/-1;font-size:14px;color:var(--mut);border-top:1px solid var(--line);padding-top:20px}
 
-footer{border-top:1px solid var(--line);padding:26px 0 40px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;
-  font:400 11px var(--mono);color:var(--mut)}
-footer .fm{font:600 15px var(--disp);color:var(--ink)}
-footer .fm b{color:var(--verm)}
-footer .cr{margin-left:auto}
-
-@media (max-width:820px){
-  .frow{grid-template-columns:48px 1fr}
-  .frow p{grid-column:2}
+@media (max-width:900px){
+  .hero{padding:44px 0 64px}
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
+  .feat{grid-template-columns:1fr;gap:28px}
+  .feat .sticky{position:static}
   .steps{grid-template-columns:1fr}
-  .plats{grid-template-columns:1fr}
-  footer .cr{margin-left:0}
-  .stage{padding:30px 14px}
+  .step{border-right:0;border-bottom:1.5px solid var(--ink)}
+  .step:last-child{border-bottom:0}
+  footer .wrap{grid-template-columns:1fr}
+  .nav a.hide-sm{display:none}
+  section{padding:64px 0}
 }
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZGTLPLG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="grain"></div>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZGTLPLG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Skip to content</a>
 
-<header>
-  <nav class="wrap">
-    <span class="mark">Theorem<b>.</b></span>
-    <span class="sp"></span>
-    <a href="app/">App</a>
-    <a href="https://github.com/Soumyajit9696/theorem/releases">Desktop</a>
-    <a class="gh" href="https://github.com/Soumyajit9696/theorem" aria-label="GitHub">
-      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-    </a>
-  </nav>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Theorem home"><img src="favicon-96x96.png" width="30" height="30" alt="">Theorem</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#formats">Formats</a>
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a class="gh" href="https://github.com/Soumyajit9696/theorem" aria-label="Theorem on GitHub">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+      <a class="btn primary sm" href="app/">Open app</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <div class="hero wrap">
-    <div class="eyebrow">LaTeX &nbsp;→&nbsp; PNG · SVG · PDF</div>
-    <h1>Theorem<b>.</b></h1>
-    <p class="tag">An equation press for people who write math.</p>
-    <p class="sub">Type LaTeX and watch it typeset live — then press it out as a transparent
-      PNG, a true-vector SVG, or a PDF. Free, private, and it runs entirely in your browser.</p>
-    <div class="ctas">
-      <a class="btn primary" href="app/">Try it online — free</a>
-      <a class="btn ghost" id="dl" href="https://github.com/Soumyajit9696/theorem/releases/latest">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5v7.2M8 9.7 5.2 6.9M8 9.7l2.8-2.8M2.8 13h10.4"/></svg>
-        <span id="dlTxt">Download desktop app</span>
-      </a>
-    </div>
-    <div class="microline">Windows · macOS · Linux &nbsp;|&nbsp; no signup, nothing to install for the web app</div>
+<main id="main">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Turn LaTeX into crisp PNG, SVG and PDF images</h1>
+        <p class="lede">Theorem is a free LaTeX equation renderer. Type your math, watch it typeset as you go, and export it with a transparent background for slides, documents and the web.</p>
+        <div class="ctas">
+          <a class="btn primary" href="app/">Open the web app</a>
+          <a class="btn ghost" id="dl" href="https://github.com/Soumyajit9696/theorem/releases/latest">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v7.2M8 9.7 5.2 6.9M8 9.7l2.8-2.8M2.8 13h10.4"/></svg>
+            <span id="dlTxt">Download desktop app</span>
+          </a>
+        </div>
+        <p class="fine">Free and open source. Windows, macOS and Linux. No account, and nothing you type leaves your device.</p>
+      </div>
 
-    <div class="stageWrap">
-      <div class="stage"><span id="liveEq"><i>e<sup>iπ</sup> + 1 = 0</i></span></div>
-      <div class="hud">this equation is being <b>typeset live</b>, right now, by the same engine the app uses</div>
+      <div class="bench" role="group" aria-label="Live LaTeX demo">
+        <div class="bench-bar" id="presets"><span>Try one</span></div>
+        <label for="tex">LaTeX source</label>
+        <textarea id="tex" spellcheck="false" autocomplete="off" autocapitalize="off" rows="3">\int_{-\infty}^{\infty} e^{-x^{2}}\,dx = \sqrt{\pi}</textarea>
+        <div class="stage"><div id="out" aria-live="polite"><code>\int_{-\infty}^{\infty} e^{-x^{2}}\,dx = \sqrt{\pi}</code></div></div>
+        <div class="bench-foot">
+          <span class="note" id="note">Typeset live by MathJax, in your browser.</span>
+          <button class="btn ghost sm" id="dlSvg" type="button">Download SVG</button>
+          <a class="btn primary sm" href="app/">Open full app</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <section id="features" class="wrap">
-    <div class="shead">
-      <span class="micro"><em>01</em>Highlights</span>
-      <h2>Everything it does</h2>
-    </div>
-    <div class="frow"><span class="fnum">01</span><h3>Live typesetting</h3>
-      <p>MathJax renders as you type, with full environment support — equation, align, cases, split, gather, matrices, arrays. Milliseconds, not seconds.</p></div>
-    <div class="frow"><span class="fnum">02</span><h3>Every export you need</h3>
-      <p>Transparent PNG, compact WebP, JPG, standalone vector SVG, and true vector PDF — at up to 6× resolution with a live pixel readout before you commit.</p></div>
-    <div class="frow"><span class="fnum">03</span><h3>Paste &amp; drag anywhere</h3>
-      <p>Copy as a paste-ready image straight into Word, Docs, and Outlook; on the desktop, drag the equation out of the window into PowerPoint or a folder as a file.</p></div>
-    <div class="frow"><span class="fnum">04</span><h3>Smart PNGs</h3>
-      <p>Every exported PNG carries its LaTeX source inside the file. Drop it back into Theorem — on any machine — and the editable formula pops back out.</p></div>
-    <div class="frow"><span class="fnum">05</span><h3>A full toolbox</h3>
-      <p>Inline autocomplete, 40+ formula templates, a 160-command reference, and a symbol palette — with placeholders selected, ready to type over.</p></div>
-    <div class="frow"><span class="fnum">06</span><h3>Total visual control</h3>
-      <p>Ink color, size, background, padding, rounded corners, a separate color for highlighting parts of an equation, and a dark theme throughout.</p></div>
-    <div class="frow"><span class="fnum">07</span><h3>Private by design</h3>
-      <p>100% client-side. Nothing you type ever leaves your machine — and the desktop edition adds full offline.</p></div>
-    <div class="frow"><span class="fnum">08</span><h3>Stay in the flow</h3>
-      <p>Open and drag in .tex files, share links that carry the equation in the URL, keep a history of recent renders, and pick up where you left off.</p></div>
-  </section>
-
-  <section id="how" class="wrap">
-    <div class="shead">
-      <span class="micro"><em>02</em>Workflow</span>
-      <h2>Three steps, ten seconds</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Type</h3>
-        <p>Write or paste LaTeX. Autocomplete, the palette, and templates fill the rest — errors show inline, in plain language.</p></div>
-      <div class="step"><div class="n">02</div><h3>Style</h3>
-        <p>Set the ink, background, padding, and corners on a live checkerboard stage that shows exactly what will be exported.</p></div>
-      <div class="step"><div class="n">03</div><h3>Export</h3>
-        <p>PNG, SVG, WebP, JPG, or PDF — or one keystroke to the clipboard, one drag to your slide deck.</p></div>
+  <section id="formats" class="alt">
+    <div class="wrap">
+      <h2>Export LaTeX as PNG, SVG, PDF, WebP or JPG</h2>
+      <p class="sec-lede">Pick the format that fits where the equation is going. Raster formats export at up to 6× resolution, with a live pixel readout before you save.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col">Format</th><th scope="col">Transparent background</th><th scope="col">Scales without blur</th><th scope="col">Good for</th></tr></thead>
+          <tbody>
+            <tr><td>PNG</td><td>Yes</td><td>No, export at up to 6×</td><td>Slides, Word, Docs, chat</td></tr>
+            <tr><td>SVG</td><td>Yes</td><td>Yes</td><td>Websites, Figma, Inkscape</td></tr>
+            <tr><td>PDF</td><td>Yes</td><td>Yes, true vector</td><td>Print, LaTeX documents</td></tr>
+            <tr><td>WebP</td><td>Yes</td><td>No, export at up to 6×</td><td>Small files for the web</td></tr>
+            <tr><td>JPG</td><td>No</td><td>No, export at up to 6×</td><td>Places that need a flat colour background</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
-  <section id="platforms" class="wrap">
-    <div class="shead">
-      <span class="micro"><em>03</em>Platforms</span>
-      <h2>Two ways to run it</h2>
+  <section id="features">
+    <div class="wrap feat">
+      <div class="sticky">
+        <h2>Built for people who write math</h2>
+        <p class="sec-lede">Everything a LaTeX to image converter should do, without an upload step or an account.</p>
+      </div>
+      <dl>
+        <div class="row"><dt>Live typesetting</dt>
+          <dd>MathJax renders as you type, with full environment support: equation, align, cases, split, gather, matrices and arrays. Errors show inline in plain language.</dd></div>
+        <div class="row"><dt>Paste and drag anywhere</dt>
+          <dd>Copy the equation as an image straight into Word, Docs and Outlook. On the desktop, drag it out of the window into PowerPoint or a folder as a file.</dd></div>
+        <div class="row"><dt>Editable PNGs</dt>
+          <dd>Every exported PNG carries its LaTeX source inside the file. <mark>Drop it back into Theorem on any machine</mark> and the editable formula returns.</dd></div>
+        <div class="row"><dt>A full toolbox</dt>
+          <dd>Inline autocomplete, 40+ formula templates, a 160-command reference and a symbol palette, with placeholders selected and ready to type over.</dd></div>
+        <div class="row"><dt>Control over the look</dt>
+          <dd>Set ink colour, size, background, padding and rounded corners, pick a separate colour to highlight part of an equation, and switch to a dark theme.</dd></div>
+        <div class="row"><dt>Private by design</dt>
+          <dd>Rendering is 100% client-side, so your equations are never uploaded. The desktop app adds full offline use.</dd></div>
+        <div class="row"><dt>Pick up where you left off</dt>
+          <dd>Open or drag in .tex files, share a link that carries the equation in its URL, and return to your recent renders from the history.</dd></div>
+      </dl>
     </div>
-    <div class="plats">
-      <div class="panel">
-        <h3>In your browser</h3>
-        <div class="pm">zero install · works offline once visited</div>
-        <ul>
-            <li>Zero install, zero setup — open the link and type</li>
-            <li>No account, no upload, runs 100% in your browser</li>
-            <li>Share links that open with the equation pre-loaded</li>
-            <li>Every export format except drag-to-file</li>
-        </ul>
+  </section>
+
+  <section class="alt" id="how">
+    <div class="wrap">
+      <h2>From LaTeX to image in three steps</h2>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><h3>Type</h3>
+          <p>Write or paste LaTeX. Autocomplete, templates and the symbol palette fill in the rest.</p></div>
+        <div class="step"><span class="n">2</span><h3>Style</h3>
+          <p>Set ink, background, padding and corners on a checkerboard stage that shows exactly what you will export.</p></div>
+        <div class="step"><span class="n">3</span><h3>Export</h3>
+          <p>Save PNG, SVG, WebP, JPG or PDF, copy to the clipboard with one keystroke, or drag it into your slide deck.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="platforms">
+    <div class="wrap">
+      <h2>Use it in the browser or on your desktop</h2>
+      <p class="sec-lede">Same engine and same exports in both. Pick whichever fits how you work.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col"></th><th scope="col">Web app</th><th scope="col">Desktop app</th></tr></thead>
+          <tbody>
+            <tr><td>Install</td><td>None, open the link</td><td>Installer from GitHub Releases</td></tr>
+            <tr><td>Offline</td><td>After your first visit</td><td>Fully offline</td></tr>
+            <tr><td>Export formats</td><td>All of them</td><td>All of them</td></tr>
+            <tr><td>Drag equations out as files</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Open .tex by double-click</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Updates</td><td>Always the latest</td><td>Automatic</td></tr>
+            <tr><td>Price</td><td>Free</td><td>Free, MIT licensed</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ctas" style="margin-top:28px">
         <a class="btn primary" href="app/">Open the web app</a>
-      </div>
-      <div class="panel">
-        <h3>On your desktop</h3>
-        <div class="pm">Windows · macOS · Linux — from GitHub Releases</div>
-        <ul>
-          <li>Native menus, status bar, and save dialogs</li>
-          <li>Open .tex files by double-click; drag equations out as files</li>
-          <li>Unsaved-changes guard, recent files, auto-updates</li>
-          <li>Fully offline, small download, MIT licensed</li>
-        </ul>
-        <a class="btn ghost" href="https://github.com/Soumyajit9696/theorem/releases/latest">Get the installer</a>
+        <a class="btn ghost" href="https://github.com/Soumyajit9696/theorem/releases/latest">Get the desktop installer</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="wrap">
-    <div class="shead" style="text-align:center">
-      <span class="micro"><em>04</em>About</span>
-      <h2 style="text-align:center">Who presses the equations</h2>
-    </div>
-    <div class="about">
-      <div class="sig">Theorem<b>.</b></div>
-      <p>Built and maintained by <b>Soumyajit Das</b> — an equation press for students, teachers,
-        researchers, and anyone who needs beautiful math in a slide, paper, or chat.
-        Free under the MIT license, open source, and it never uploads a single keystroke.</p>
-      <div class="links">
-        <a href="https://github.com/Soumyajit9696">GitHub</a>
-        <a href="https://github.com/Soumyajit9696/theorem">Repository</a>
-        <a href="https://github.com/Soumyajit9696/theorem/releases">Releases</a>
-        <a href="https://github.com/Soumyajit9696/theorem/blob/main/LICENSE">MIT License</a>
-      </div>
+  <section class="alt" id="faq">
+    <div class="wrap faq">
+      <h2>Questions people ask</h2>
+      <details><summary>How do I convert LaTeX to PNG?</summary>
+        <p>Type or paste your LaTeX into Theorem, check the live preview, choose PNG and export. The background stays transparent unless you pick a colour.</p></details>
+      <details><summary>Is Theorem free?</summary>
+        <p>Yes. The web app and the desktop app are free and open source under the MIT license, with no account and no watermark.</p></details>
+      <details><summary>Does Theorem upload my equations?</summary>
+        <p>No. Rendering happens entirely in your browser or in the desktop app, so what you type never leaves your device.</p></details>
+      <details><summary>Can I export a LaTeX equation with a transparent background?</summary>
+        <p>Yes. PNG, WebP and SVG exports keep a transparent background. JPG cannot store transparency, so it uses the background colour you choose.</p></details>
+      <details><summary>Does Theorem work offline?</summary>
+        <p>The desktop app works fully offline. The web app also keeps working offline after your first visit.</p></details>
+      <details><summary>Which LaTeX does Theorem support?</summary>
+        <p>Theorem typesets math with MathJax, including equation, align, cases, split, gather, matrices and arrays. It renders equations, not whole documents with a documentclass.</p></details>
+      <details><summary>Can I edit an exported equation later?</summary>
+        <p>Yes. Every PNG exported from Theorem carries its LaTeX source inside the file. Drop the PNG back into Theorem on any machine and the editable formula returns.</p></details>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span class="fm">Theorem<b>.</b></span>
-    <span>LaTeX equation press</span>
-    <a href="https://github.com/Soumyajit9696/theorem">GitHub</a>
-    <a href="app/">Web app</a>
-    <a href="https://github.com/Soumyajit9696/theorem/releases">Desktop</a>
-    <span class="cr">Set in Fraunces &amp; IBM Plex · typeset by MathJax · built by Soumyajit Das</span>
+    <div>
+      <a class="brand" href="./"><img src="favicon-96x96.png" width="30" height="30" alt="">Theorem</a>
+      <p>Built and maintained by Soumyajit Das for students, teachers and researchers who need clean math in a slide, paper or chat. MIT licensed.</p>
+    </div>
+    <ul>
+      <li><a href="app/">Web app</a></li>
+      <li><a href="https://github.com/Soumyajit9696/theorem/releases">Desktop releases</a></li>
+      <li><a href="https://github.com/Soumyajit9696/theorem">Source on GitHub</a></li>
+      <li><a href="https://github.com/Soumyajit9696/theorem/blob/main/LICENSE">MIT license</a></li>
+      <li><a href="https://github.com/Soumyajit9696">Soumyajit Das</a></li>
+    </ul>
+    <p class="colophon">Set in Bricolage Grotesque, Newsreader and JetBrains Mono. Equations typeset by MathJax.</p>
   </div>
 </footer>
 
 <script>
 /* platform-aware download button */
 (function(){
-  var REL = 'https://github.com/Soumyajit9696/theorem/releases/latest/download';
-  var ua = navigator.userAgent, pf = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
-  var os = 'Windows', href = REL + '/Theorem-Setup.exe';
-  if (/Mac|iPhone|iPad/i.test(pf + ua)){ os = 'macOS'; href = REL + '/Theorem.dmg'; }
-  else if (/Linux|X11/i.test(ua) && !/Android/i.test(ua)){ os = 'Linux'; href = REL + '/Theorem.AppImage'; }
-  document.getElementById('dlTxt').textContent = 'Download for ' + os;
-  document.getElementById('dl').href = href;
+  var REL='https://github.com/Soumyajit9696/theorem/releases/latest/download';
+  var ua=navigator.userAgent, pf=(navigator.userAgentData&&navigator.userAgentData.platform)||navigator.platform||'';
+  var os='Windows', href=REL+'/Theorem-Setup.exe';
+  if(/Mac|iPhone|iPad/i.test(pf+ua)){os='macOS';href=REL+'/Theorem.dmg';}
+  else if(/Linux|X11/i.test(ua)&&!/Android/i.test(ua)){os='Linux';href=REL+'/Theorem.AppImage';}
+  document.getElementById('dlTxt').textContent='Download for '+os;
+  document.getElementById('dl').href=href;
 })();
 
-/* hero equation — typeset live by the app's own engine */
+/* live workbench */
 (function(){
-  var EQS = [
-    '\\int_{-\\infty}^{\\infty} e^{-x^{2}}\\,dx = \\sqrt{\\pi}',
-    'e^{i\\pi} + 1 = 0',
-    '\\hat{f}(\\xi) = \\int_{-\\infty}^{\\infty} f(x)\\, e^{-2\\pi i x \\xi}\\,dx',
-    'i\\hbar \\frac{\\partial}{\\partial t} \\Psi = \\hat{H} \\Psi',
-    'P(A \\mid B) = \\frac{P(B \\mid A)\\, P(A)}{P(B)}'
+  var PRESETS=[
+    ['Gaussian','\\int_{-\\infty}^{\\infty} e^{-x^{2}}\\,dx = \\sqrt{\\pi}'],
+    ['Euler','e^{i\\pi} + 1 = 0'],
+    ['Schrödinger','i\\hbar \\frac{\\partial}{\\partial t} \\Psi = \\hat{H} \\Psi'],
+    ['Fourier','\\hat{f}(\\xi) = \\int_{-\\infty}^{\\infty} f(x)\\, e^{-2\\pi i x \\xi}\\,dx'],
+    ['Bayes','P(A \\mid B) = \\frac{P(B \\mid A)\\, P(A)}{P(B)}'],
+    ['Maxwell','\\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}']
   ];
-  var box = document.getElementById('liveEq'), i = 0, ready = false;
-  function whenReady(){
-    return (window.MathJax && MathJax.startup && MathJax.startup.promise)
-      ? MathJax.startup.promise
-      : new Promise(function(r){ setTimeout(function(){ whenReady().then(r); }, 120); });
+  var tex=document.getElementById('tex'), out=document.getElementById('out'),
+      note=document.getElementById('note'), bar=document.getElementById('presets'),
+      dlBtn=document.getElementById('dlSvg'), NOTE='Typeset live by MathJax, in your browser.';
+  var timer=null, current=null;
+
+  PRESETS.forEach(function(p,i){
+    var b=document.createElement('button');
+    b.type='button'; b.className='chip'; b.textContent=p[0]; b.setAttribute('aria-pressed',i===0?'true':'false');
+    b.addEventListener('click',function(){
+      tex.value=p[1];
+      Array.prototype.forEach.call(bar.querySelectorAll('.chip'),function(c){c.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+      render();
+    });
+    bar.appendChild(b);
+  });
+
+  function mjReady(){return window.MathJax&&MathJax.tex2svgPromise&&MathJax.startup&&MathJax.startup.promise;}
+
+  async function render(){
+    if(!mjReady()){setTimeout(render,150);return;}
+    await MathJax.startup.promise;
+    var src=tex.value.trim();
+    if(!src){out.innerHTML='';current=null;note.textContent='Type some LaTeX to see it here.';note.classList.remove('err');return;}
+    try{
+      var node=await MathJax.tex2svgPromise(src,{display:true});
+      var err=node.querySelector('[data-mjx-error]');
+      var svg=node.querySelector('svg');
+      out.innerHTML=''; out.appendChild(svg);
+      if(err){
+        current=null; note.classList.add('err');
+        note.textContent=err.getAttribute('data-mjx-error');
+      } else {
+        current=svg; note.classList.remove('err'); note.textContent=NOTE;
+      }
+    }catch(e){
+      current=null; note.classList.add('err'); note.textContent='Could not render this LaTeX.';
+    }
   }
-  async function show(){
-    try {
-      var node = await MathJax.tex2svgPromise(EQS[i % EQS.length], { display: true });
-      var svg = node.querySelector ? (node.querySelector('svg') || node) : node;
-      box.style.opacity = 0;
-      setTimeout(function(){
-        box.innerHTML = '';
-        box.appendChild(svg);
-        box.style.opacity = 1;
-      }, 220);
-    } catch (e) { /* keep the current equation */ }
-    i++;
-  }
-  whenReady().then(function(){ ready = true; show(); setInterval(show, 4200); });
+
+  tex.addEventListener('input',function(){
+    Array.prototype.forEach.call(bar.querySelectorAll('.chip'),function(c){c.setAttribute('aria-pressed','false');});
+    clearTimeout(timer); timer=setTimeout(render,120);
+  });
+
+  dlBtn.addEventListener('click',function(){
+    if(!current){return;}
+    var s=current.cloneNode(true);
+    s.setAttribute('xmlns','http://www.w3.org/2000/svg');
+    var w=parseFloat(s.getAttribute('width')), h=parseFloat(s.getAttribute('height'));
+    if(/ex$/.test(s.getAttribute('width')||'')){s.setAttribute('width',(w*12).toFixed(2));s.setAttribute('height',(h*12).toFixed(2));}
+    s.removeAttribute('style'); s.removeAttribute('focusable'); s.removeAttribute('role');
+    var xml='<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(s).replace(/currentColor/g,'#000000');
+    var url=URL.createObjectURL(new Blob([xml],{type:'image/svg+xml'}));
+    var a=document.createElement('a'); a.href=url; a.download='equation.svg';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){URL.revokeObjectURL(url);},1000);
+  });
+
+  render();
 })();
 </script>
 </body>
